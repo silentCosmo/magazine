@@ -3,62 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Magazine Library</title>
-  <!-- Add Tailwind CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <!-- Your custom styles -->
-  <style>
-    /* Customize your styles here */
-    body {
-      background-color: #f4f4f4; /* Light grey background */
-    }
-    /* Add more styles as needed */
-  </style>
+  <title>Magazine Homepage</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="font-sans">
+<body>
+  <header class="bg-white py-6 px-4 flex items-center justify-between">
+    <a href="#" class="font-bold text-xl">Magazine</a>
+    <nav class="hidden md:flex items-center">
+      <ul class="flex space-x-6">
+        <li>
+          <a href="#" class="hover:text-blue-500">Categories</a>
+          <ul class="absolute hidden bg-white shadow rounded-md py-2 mt-2">
+            <li><a href="#" class="px-4 py-2 hover:bg-gray-100">Business</a></li>
+            <li><a href="#" class="px-4 py-2 hover:bg-gray-100">Technology</a></li>
+            <li><a href="#" class="px-4 py-2 hover:bg-gray-100">Lifestyle</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="hover:text-blue-500">About</a></li>
+        <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Navbar -->
-  <nav class="bg-green-600 p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <!-- Logo -->
-      <a href="#" class="text-white text-lg font-bold">Magazine Library</a>
-
-      <!-- Navbar links and category dropdown -->
-      <div class="space-x-4">
-        <a href="#" class="text-white">Home</a>
-        <a href="#" class="text-white">Magazines</a>
-        <div class="relative inline-block text-white">
-          <span class="cursor-pointer">Categories</span>
-          <!-- Dropdown content -->
-          <div class="absolute hidden bg-white text-gray-800 mt-2 p-2 rounded shadow-lg">
-            <a href="#" class="block py-1">Category 1</a>
-            <a href="#" class="block py-1">Category 2</a>
-            <!-- Add more categories -->
-          </div>
-        </div>
+  <section class="hero bg-cover bg-center" style="background-image: url('ultimate-bliss.jpg');">
+    <div class="container mx-auto px-4 py-16 flex flex-col items-center">
+      <h1 class="text-slate-300 text-4xl font-bold mb-4">Discover<br>Inspiring Stories</h1>
+      <p class="text-wh text-lg font-light mb-8">Stay up-to-date with the latest trends, thought-provoking ideas, and captivating stories.</p>
+      <a href="#" class="btn btn-blue">Explore Now</a>
+      <div class="flex justify-center mt-4">
+        <a href="#" class="mx-4 text-white hover:text-gray-400">Subscribe</a>
+        <a href="#" class="mx-4 text-white hover:text-gray-400">Read the Latest Issue</a>
       </div>
     </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="bg-gray-200 py-20 text-center">
-    <div class="container mx-auto">
-      <h1 class="text-4xl font-bold text-gray-800 mb-4">Explore a World of Magazines</h1>
-      <p class="text-lg text-gray-600">Discover a wide range of magazines for every interest.</p>
-    </div>
   </section>
 
-  <!-- Your Magazine List Section -->
-  <section class="container mx-auto my-8">
-    <!-- Add your magazine list here -->
+  <section class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-4">Featured Articles</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div class="col-span-1 mb-4">
+        <a href="#" class="magazine overflow-hidden rounded-lg shadow-md">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAHYJJiE4_mLeTxLNUr9vi3NI7_m8KdrAe0DUmhyf6yHFFoa74d2hGwCw&s=10" alt="Magazine Cover" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">The Future of Work</h3>
+            <p class="text-gray-500">Exploring how technology is shaping the workplace</p>
+          </div>
+        </a>
+      </div>
+      
+            <div class="col-span-1 mb-4">
+        <a href="#" class="magazine overflow-hidden rounded-lg shadow-md">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAHYJJiE4_mLeTxLNUr9vi3NI7_m8KdrAe0DUmhyf6yHFFoa74d2hGwCw&s=10" alt="Magazine Cover" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">The Future of Work</h3>
+            <p class="text-gray-500">Exploring how technology is shaping the workplace</p>
+          </div>
+        </a>
+      </div>
+      
+            <div class="col-span-1 mb-4">
+        <a href="#" class="magazine overflow-hidden rounded-lg shadow-md">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAHYJJiE4_mLeTxLNUr9vi3NI7_m8KdrAe0DUmhyf6yHFFoa74d2hGwCw&s=10" alt="Magazine Cover" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">The Future of Work</h3>
+            <p class="text-gray-500">Exploring how technology is shaping the workplace</p>
+          </div>
+        </a>
+      </div>
+      
+      <div class="col-span-1 mb-4">
+        <a href="#" class="magazine overflow-hidden rounded-lg shadow-md">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAHYJJiE4_mLeTxLNUr9vi3NI7_m8KdrAe0DUmhyf6yHFFoa74d2hGwCw&s=10" alt="Magazine Cover" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">The Future of Work</h3>
+            <p class="text-gray-500">Exploring how technology is shaping the workplace</p>
+          </div>
+        </a>
+      </div>
+      
+      
+      </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-4">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2023 Magazine Library. All rights reserved.</p>
+  <footer class="bg-gray-800 text-white py-8 px-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <p class="text-sm">Copyright &copy; 2023 Magazine</p>
+      <ul class="flex items-center">
+        <li><a href="#" class="mx-4 text-white hover:text-gray-400">Social</a></li>
+        <li><a href="#" class="mx-4 text-white hover:text-gray-400">Contact</a></li>
+      </ul>
     </div>
   </footer>
-
 </body>
 </html>
