@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Library</title>
+  <!-- Add Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Your custom styles -->
+  <style>
+    /* Customize your styles here */
+    body {
+      background-color: #f4f4f4; /* Light grey background */
+    }
+    /* Add more styles as needed */
+  </style>
 </head>
-<body>
-    <p>change</p>
-    
+<body class="font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-green-600 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#" class="text-white text-lg font-bold">Magazine Library</a>
+
+      <!-- Navbar links and category dropdown -->
+      <div class="space-x-4">
+        <a href="#" class="text-white">Home</a>
+        <a href="#" class="text-white">Magazines</a>
+        <div class="relative inline-block text-white">
+          <span class="cursor-pointer">Categories</span>
+          <!-- Dropdown content -->
+          <div class="absolute hidden bg-white text-gray-800 mt-2 p-2 rounded shadow-lg">
+            <a href="#" class="block py-1">Category 1</a>
+            <a href="#" class="block py-1">Category 2</a>
+            <!-- Add more categories -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gray-200 py-20 text-center">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Explore a World of Magazines</h1>
+      <p class="text-lg text-gray-600">Discover a wide range of magazines for every interest.</p>
+    </div>
+  </section>
+
+  <!-- Your Magazine List Section -->
+  <section class="container mx-auto my-8">
+    <!-- Add your magazine list here -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 Magazine Library. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
