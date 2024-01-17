@@ -215,7 +215,7 @@
 
 
   <!-- Read Magazine -->
-  <section class="my-1 "
+  <section id="mgz" class="my-1 "
     style="background-image: url(https://static.vecteezy.com/system/resources/previews/024/409/662/large_2x/magical-portal-under-an-ancient-stone-arch-located-in-the-jungle-wild-forest-blue-glow-ancient-stone-buildings-cultural-monuments-teleportation-to-parallel-universes-3d-rendering-generate-ai-free-photo.jpg);">
 
     <div class="flex justify-content justify-evenly text-gray-100 py-1" style="background: #4f7942;">
@@ -259,12 +259,12 @@
     <script src="turn.js"></script>
 
     <div
-      class=" justify-center items-center flex font-bold backdrop-filter backdrop-blur-lg backdrop-brightness-50 py-24">
+      class=" justify-start hover:justify-center items-center flex font-bold backdrop-filter backdrop-blur-lg backdrop-brightness-50 py-24">
 
       <button id="npb" class="text-green-50 absolute left-20 p-3 px-4 rounded-full hover:text-green-100" style="background: #4f7942;"> <i class="fa-solid fa-less-than"></i></button>
       
 
-      <div class="">
+      <div class="" id="myDiv">
 
         <!-- Magazine -->
 
@@ -424,6 +424,14 @@
         </script>
 
       </div>
+
+      <!-- <script>
+        const myDiv = document.getElementById("myDiv");
+        myDiv.addEventListener("click", () => {
+        myDiv.style.top = "50px"; /* Move the div up */
+        myDiv.style.marginLeft = "18%"; /* Move the div to the left */
+        });
+      </script> -->
 
 
       <button id="npb" class="text-green-50 absolute right-20 p-3 px-4 rounded-full hover:text-green-100" style="background: #4f7942;"> <i class="fa-solid fa-greater-than"></i></button>
