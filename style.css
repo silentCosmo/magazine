@@ -6,12 +6,17 @@ body{
     background-color: #f0f0f0;
 }
 #magazine{
-	width: 1200px;
-	height: 720px;
-    cursor: pointer;
+	width: 1250px;
+	height: 820px;
+    cursor: pointer; 
+    margin-left: -40rem;
+    transition: margin-left 0.5s ease-in-out;
     /* -moz-box-shadow-bottom: 4px 4px 4px black;
     -webkit-box-shadow-bottom: 4px 4px 4px black;
     box-shadow: 4px 4px 4px rgba(189, 187, 187, 0.63); */
+}
+#magazine:hover{
+    margin-left: auto;
 }
 #magazine .turn-page{
     border-radius: 4px;
@@ -85,6 +90,12 @@ body{
 #mag .turn-page .content p {
     display: flex;
     padding: 1.5rem;
+}
+
+/* Buttons */
+
+#npb:hover{
+    transform: scale(0.8);
 }
 
 /* ADMINPANNEL */
